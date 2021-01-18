@@ -1,6 +1,6 @@
 # 💬xMessage
 A messaging application with React, Redux and Firebase
 
-##🛠️Functionalities
+## 🛠️Functionalities
 - Google Authentication
 - Communication bettween individuals
