@@ -4,7 +4,7 @@ import Xmessage from './Xmessage'
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Xmessage/>
     </div>
   );
