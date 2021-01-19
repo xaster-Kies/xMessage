@@ -2,6 +2,8 @@ import React from 'react'
 import './Chat.css'
 
 function Chat() {
+    const sendMessage = (e) {};
+
     return (
         <div className="chat">
             {/* Chat header */}
