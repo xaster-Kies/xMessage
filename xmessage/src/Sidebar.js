@@ -8,9 +8,8 @@ import './Sidebar.css'
 function Sidebar() {
     return (
         <div className="sidebar">
-            hello
             <div className="sidebar__header">
-                <Avatar/>
+                <Avatar className="sidebar__avatar"/>
             <div className="sidebar__input">
                 <SearchIcon/>
                 <input type="text" placeholder="Search"/>
@@ -23,7 +22,7 @@ function Sidebar() {
             </div>
 
             <div className="sidebar__chats">
-                
+
             </div>
         </div>
     )
