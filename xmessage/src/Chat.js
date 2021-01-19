@@ -6,7 +6,7 @@ function Chat() {
         <div className="chat">
             {/* Chat header */}
             <div className="chat__header">
-                <h4>To: Channel Name</h4>
+                <h4>To:<span class__name="chat__name"> Channel Name</span></h4>
                 <strong>Details</strong>
             </div>
 
