@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Chat.css'
 import MicNoneIcon from '@material-ui/icons/MicNone'
+import IconButton from '@material-ui/core/IconButton'
 
 function Chat() {
     const [input, setInput] = useState("");
