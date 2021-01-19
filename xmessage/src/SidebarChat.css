@@ -12,7 +12,7 @@
 }
 
 .sidebarChat__info {
-    margin-legt: 15px;
+    margin-left: 15px;
     position: relative;
     width: 10%;
 }
@@ -20,5 +20,5 @@
 .sidebarChat__info > small {
     position: absolute;
     top: 5px;
-    
+    right: 0;
 }
