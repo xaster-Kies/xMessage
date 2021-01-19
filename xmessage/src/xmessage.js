@@ -5,6 +5,7 @@ function xmessage() {
     return (
         <div className="xmessage">
             {/* Sidebar */}
+            
             {/* Chat */}
         </div>
     )
