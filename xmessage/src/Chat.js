@@ -14,7 +14,10 @@ function Chat() {
 
 
             {/* Chat input */}
-            
+            <div className="chat__input">
+                <input placeholder="xMessage" type="text"/>
+                <button onClick={sendMessage}>Send Message</button>
+            </div>
         </div>
     )
 }
