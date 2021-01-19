@@ -3,7 +3,7 @@ import './Chat.css'
 
 function Chat() {
     const [input, setInput] = useState("")
-    const sendMessage = (e) {
+    const sendMessage = (e) => {
         e.preventDefault();
 
         //Firebase Clever stuff!!
