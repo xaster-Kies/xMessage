@@ -2,7 +2,12 @@ import React from 'react'
 import './Chat.css'
 
 function Chat() {
-    const sendMessage = (e) {};
+    const []
+    const sendMessage = (e) {
+        e.preventDefault();
+
+        //Firebase Clever stuff!!
+    };
 
     return (
         <div className="chat">
