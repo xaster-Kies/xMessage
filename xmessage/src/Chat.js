@@ -32,6 +32,9 @@ function Chat() {
                   />
                 <button onClick={sendMessage}>Send Message</button>
             </form>
+            <IconButton>
+                <MicNoneIcon className = "chat__mic"/>
+            </IconButton>
             </div>
         </div>
     )
