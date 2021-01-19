@@ -1,5 +1,6 @@
 import React from 'react'
 import Sidebar from './Sidebar'
+import Chat from './Chat'
 import "./xmessage.css"
 
 function xmessage() {
@@ -9,6 +10,7 @@ function xmessage() {
             <Sidebar/>
             
             {/* Chat */}
+            <Chat/>
         </div>
     )
 }
