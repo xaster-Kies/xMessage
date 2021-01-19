@@ -1,22 +1,22 @@
-import { createSlice } from '@reduxjs/tollkit';
+// import { createSlice } from '@reduxjs/tollkit';
 
-export const counterSlice = createSlice( {
-    name: 'counter', 
-    initialState: {
-        value: 0,
-    },
-    reducers: {
-        increment: state => {
+// export const counterSlice = createSlice( {
+//     name: 'counter', 
+//     initialState: {
+//         value: 0,
+//     },
+//     reducers: {
+//         increment: state => {
 
-            state.value +- 1;
-        },
-        decrement: state => {
-            state.value -= 1;
-        },
-        incrementByAccount: (state, action) => {
-            state.value += action.payload;
-        },
-    },
-   });
+//             state.value +- 1;
+//         },
+//         decrement: state => {
+//             state.value -= 1;
+//         },
+//         incrementByAccount: (state, action) => {
+//             state.value += action.payload;
+//         },
+//     },
+//    });
 
-   export const { increment, decrement, incrementByAmount}
+//    export const { increment, decrement, incrementByAmount}
