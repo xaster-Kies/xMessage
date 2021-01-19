@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Chat.css'
 
 function Chat() {
-    const [input, setInput] = useState("")
+    const [input, setInput] = useState("");
     const sendMessage = (e) => {
         e.preventDefault();
 
         //Firebase Clever stuff!!
+
+        setInput("");
     };
 
     return (
@@ -22,13 +24,14 @@ function Chat() {
 
             {/* Chat input */}
             <div className="chat__input">
+            <form>
                 <input value={input}
                  placeholder="xMessage"
-                 value = {input}
                  onChange = {(e) => setInput(e.target.value)}
                   type="text"
                   />
                 <button onClick={sendMessage}>Send Message</button>
+            </form>
             </div>
         </div>
     )
