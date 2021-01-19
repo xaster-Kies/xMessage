@@ -2,7 +2,7 @@ import React from 'react'
 import './Chat.css'
 
 function Chat() {
-    const []
+    const [input, setInput] = useState("")
     const sendMessage = (e) {
         e.preventDefault();
 
@@ -22,7 +22,12 @@ function Chat() {
 
             {/* Chat input */}
             <div className="chat__input">
-                <input placeholder="xMessage" type="text"/>
+                <input value={input}
+                 placeholder="xMessage"
+                 value = {input}
+                 onChange = {(e) => setInput(e.target.value)}
+                  type="text"
+                  />
                 <button onClick={sendMessage}>Send Message</button>
             </div>
         </div>
