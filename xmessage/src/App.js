@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
-import xmessage from './xmessage';
+import Xmessage from './Xmessage'
 
 function App() {
   return (
     <div className="App">
-      <xmessage/>
+      <h2>xMessage</h2>
+      <Xmessage/>
     </div>
   );
 }
