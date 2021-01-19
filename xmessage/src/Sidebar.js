@@ -3,6 +3,7 @@ import { Avatar, IconButton } from '@material-ui/core'
 import SearchIcon from "@material-ui/icons/Search"
 import RateReviewOutlinedIcon from "@material-ui/icons/RateReviewOutlined"
 import './Sidebar.css'
+import SidebarChat from './SidebarChat'
 
 
 function Sidebar() {
