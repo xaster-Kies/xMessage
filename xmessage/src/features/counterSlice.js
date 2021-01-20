@@ -1,22 +1,23 @@
 import { createSlice } from '@reduxjs/tollkit';
 
-export const counterSlice = createSlice( {
-    name: 'counter', 
+export const userSlice = createSlice( {
+    name: 'user', 
     initialState: {
         value: 0,
     },
     reducers: {
-        increment: state => {
-
-            state.value +- 1;
+        login: (state, action) => {
+            state.user = 1;
         },
-        decrement: state => {
-            state.value -= 1;
+        logout: state => {
+            state.user -= 1;
         },
-        incrementByAccount: (state, action) => {
-            state.value += action.payload;
-        },
+        
     },
    });
 
-   export const { increment, decrement, incrementByAmount} = counterSlice.actions;
+   export const { login, logout} = userSlice.actions;
+
+   export const selectUser = state => state.user.user;
+
+   export default userSlice.reducer;
