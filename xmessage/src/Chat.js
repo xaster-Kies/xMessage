@@ -22,6 +22,9 @@ function Chat() {
             </div>
 
             {/* Chat messages */}
+            <div className="chat__messages">
+                <h2>I am a msg</h2>
+            </div>
 
 
             {/* Chat input */}
