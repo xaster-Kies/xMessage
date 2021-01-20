@@ -1,9 +1,9 @@
 import { createSlice } from '@reduxjs/tollkit';
 
-export const userSlice = createSlice( {
+export const userSlice = createSlice({
     name: 'user', 
     initialState: {
-        value: 0,
+        user: null,
     },
     reducers: {
         login: (state, action) => {
