@@ -6,7 +6,7 @@ import './Login.css'
 function Login() {
     const signIn = () => {
         auth.signInWithPopup(provider)
-        .catch((error) => alert(error, message));
+        .catch((error) => alert(error.message));
     }
 
     return (
