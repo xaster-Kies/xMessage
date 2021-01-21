@@ -3,6 +3,10 @@ import React from 'react'
 import './Login.css'
 
 function Login() {
+    const signIn = () => {
+        
+    }
+
     return (
         <div className="login">
         <div className="login__logo">
@@ -11,7 +15,7 @@ function Login() {
             <h1>xMessage</h1>
         </div>
 
-        <Button>Sign In</Button>
+        <Button onClick={signIn}>Sign In</Button>
         </div>
     )
 }
