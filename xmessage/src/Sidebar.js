@@ -6,6 +6,7 @@ import './Sidebar.css'
 import SidebarChat from './SidebarChat'
 import { useSelector } from 'react-redux'
 import { auth } from './firebase'
+import { selectUser } from './features/userSlice'
 
 
 function Sidebar() {
