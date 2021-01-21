@@ -15,14 +15,13 @@ function Sidebar() {
     
     useEffect(() => {
         //No SQL structure of getting back
-        db.collection('chats').onSnapshot((snapshot) => (
+        db.collection("chats").onSnapshot((snapshot) =>
             setChats(
                 snapshot.docs.map((doc) => ({
                 id: doc.id,
-                data: doc.data()
-
+                data: doc.data(),
             }))
-        ))
+        ));
     }, []);
     return (
         <div className="sidebar">
