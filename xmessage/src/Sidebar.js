@@ -13,12 +13,17 @@ function Sidebar() {
     const user = useSelector(selectUser);
     const [chats, setChats] = useState([]);
     
-    userEffect() => {
+    userEffect(() => {
         //No SQL structure of getting back
-        db.collection('chats').onSnapshot(snapshot => (
-            setChats()
+        db.collection('chats').onSnapshot((snapshot) => (
+            setChats(
+                snapshot.docs.map(doc) => ({
+                id: doc.id,
+                data: doc.data()
+
+            }))
         ))
-    }
+    }, []);
     return (
         <div className="sidebar">
             <div className="sidebar__header">
