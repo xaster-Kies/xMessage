@@ -5,13 +5,20 @@ import RateReviewOutlinedIcon from "@material-ui/icons/RateReviewOutlined"
 import './Sidebar.css'
 import SidebarChat from './SidebarChat'
 import { useSelector } from 'react-redux'
-import { auth } from './firebase'
+import db, { auth } from './firebase'
 import { selectUser } from './features/userSlice'
 
 
 function Sidebar() {
     const user = useSelector(selectUser);
-
+    const [chats, setChats] = useState([]);
+    
+    userEffect() => {
+        //No SQL structure of getting back
+        db.collection('chats').onSnapshot(snapshot => (
+            setChats()
+        ))
+    }
     return (
         <div className="sidebar">
             <div className="sidebar__header">
@@ -29,10 +36,6 @@ function Sidebar() {
             </div>
 
             <div className="sidebar__chats">
-                <SidebarChat/>
-                <SidebarChat/>
-                <SidebarChat/>
-                <SidebarChat/>
                 <SidebarChat/>
             </div>
         </div>
