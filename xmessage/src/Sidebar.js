@@ -40,7 +40,7 @@ function Sidebar() {
             </div>
 
             <div className="sidebar__chats">
-                //Clever chat rendering
+                {/* Clever chat rendering */}
                 {chats.map(chat => {
                     <SidebarChat/>
                 })}
