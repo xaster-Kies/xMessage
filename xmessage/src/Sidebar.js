@@ -13,7 +13,7 @@ function Sidebar() {
     const user = useSelector(selectUser);
     const [chats, setChats] = useState([]);
     
-    userEffect(() => {
+    useEffect(() => {
         //No SQL structure of getting back
         db.collection('chats').onSnapshot((snapshot) => (
             setChats(
