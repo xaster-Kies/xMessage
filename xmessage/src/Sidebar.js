@@ -17,7 +17,7 @@ function Sidebar() {
         //No SQL structure of getting back
         db.collection('chats').onSnapshot((snapshot) => (
             setChats(
-                snapshot.docs.map(doc) => ({
+                snapshot.docs.map((doc) => ({
                 id: doc.id,
                 data: doc.data()
 
