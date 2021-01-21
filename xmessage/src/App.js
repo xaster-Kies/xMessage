@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
 import { selectUser } from './features/userSlice';
 import Login from './Login';
@@ -8,7 +8,7 @@ import { auth } from "./firebase"
 
 function App() {
   const user = useSelector(selectUser);
-
+  const dispatch = useDispatch(function)
   useEffect(() => {
    auth.onAuthStateChanged(authUser => {
      if(authUser){
