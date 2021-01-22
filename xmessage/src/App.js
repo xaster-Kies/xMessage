@@ -21,6 +21,7 @@ function App() {
       }))
      }else {
        //user is Logged out
+       dispatch(logout());
      }
    })
   }, [user])
