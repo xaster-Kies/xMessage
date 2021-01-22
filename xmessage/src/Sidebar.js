@@ -38,7 +38,7 @@ function Sidebar() {
         <div className="sidebar">
             <div className="sidebar__header">
             <Avatar onClick={
-                () => auth().logout } className="sidebar__avatar" src = {user.photo}/>
+                () => auth.signOut() } className="sidebar__avatar" src = {user.photo}/>
             <div className="sidebar__input">
                 <SearchIcon/>
                 <input type="text" placeholder="Search"/>
