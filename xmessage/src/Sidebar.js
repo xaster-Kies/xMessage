@@ -29,10 +29,10 @@ function Sidebar() {
         const chatName = prompt('Please enter a chat name');
 
         if (chatName) {
-            db.collections("chats").add({
+            db.collection("chats").add({
                 chatName: chatName,
             });
-        }
+        }  
     }
     return (
         <div className="sidebar">
