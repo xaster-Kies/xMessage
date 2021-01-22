@@ -3,12 +3,12 @@ import "./SidebarChat.css"
 import {Avatar} from '@material-ui/core'
 
 
-function SidebarChat() {
+function SidebarChat(id, chatName) {
     return (
         <div className="sidebarChat">
             <Avatar/>
             <div className="sidbarChat__info">
-                <h3>Channel Name</h3>
+                <h3>{chatName}</h3>
                 <p>last msg sent...</p>
                 <small>timestamp</small>
             </div>

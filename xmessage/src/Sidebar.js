@@ -41,10 +41,10 @@ function Sidebar() {
 
             <div className="sidebar__chats">
                 {/* Clever chat rendering */}
-                {chats.map(chat => {
-                    <SidebarChat/>
+                {chats.map(({id, data: {chatName} }) => {
+                    <SidebarChat key={id} id={id} chatName={chatName}/>
                 })}
-                
+        
             </div>
         </div>
     )
