@@ -23,6 +23,12 @@ function Sidebar() {
             }))
         ));
     }, []);
+
+    const addChat = () => {
+        db.collections('chats').add({
+            chatName
+        })
+    }
     return (
         <div className="sidebar">
             <div className="sidebar__header">
@@ -34,7 +40,7 @@ function Sidebar() {
             </div>
 
             <IconButton variant = "outlined" className="sidebar__inputButton">
-                <RateReviewOutlinedIcon/>
+                <RateReviewOutlinedIcon onClick={addChat}/>
             </IconButton>
             
             </div>
