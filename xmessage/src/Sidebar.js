@@ -15,18 +15,17 @@ function Sidebar() {
     
     useEffect(() => {
         //No SQL structure of getting back
-        db.collection("chats").onSnapshot((snapshot) =>
-            setChats(
-                snapshot.docs.map((doc) => ({
+        db.collection("chats")
+        .onSnapshot((snapshot =>
+            setChats(snapshot.docs.map((doc) => ({
                 id: doc.id,
                 data: doc.data(),
-            }))
-        ));
+            })))));
     }, []);
 
     const addChat = () => {
 
-        const chatName = prompt('Please enter a chat name');
+        const chatName = prompt('Please Enter a Chat Name');
 
         if (chatName) {
             db.collection("chats").add({
